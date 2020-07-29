@@ -1,0 +1,6 @@
+var arr = 2;
+function hourToSeconds(arr) {
+ return 2*60*60;
+}
+var data = hourToSeconds(arr);
+console.log(data);
