@@ -1,0 +1,15 @@
+var num = 5;
+function getOpposite(num) {
+  if(num === 0)
+  {
+  return 0;
+  }
+  else 
+  {if(Number.isInteger(num))
+    return -(num);
+  else
+    return -1;
+	}
+}
+var result = getOpposite(num);
+console.log(result);
