@@ -1,0 +1,14 @@
+function getPositives(ar)
+{
+  var arr1=[];
+  for(var i=0;i<ar.length;i++)
+  {
+   if(Math.sign(ar[i]) === 1)
+     arr1.push(ar[i]);
+  }
+  return arr1;
+}
+
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var ar2 = getPositives(ar);
+console.log(ar2);
