@@ -1,0 +1,41 @@
+function getPrimes(nPrimes, startAt)
+{
+var ar=[];
+var count = 0;
+while(count<=10)
+{
+ var i= startAt;
+ if(isPrime(i))
+ {
+  ar.push(i);
+  i++;
+  count++;
+ }
+ else
+ i++;
+}
+return ar;
+}
+// Returns true if a number is prime
+function isPrime(n)
+{
+ if (n===1)
+  {
+    return false;
+  }
+  else if(n === 2)
+  {
+    return true;
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x === 0)
+      {
+        return false;
+      }
+    }
+    return true;  
+  }
+}
+console.log(getPrimes(10, 100));
